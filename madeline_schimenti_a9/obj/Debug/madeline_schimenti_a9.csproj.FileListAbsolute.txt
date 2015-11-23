@@ -37,3 +37,4 @@ C:\Users\Madeline_2\Documents\GitHub\madeline_schimenti_a9\madeline_schimenti_a9
 C:\Users\Madeline_2\Documents\GitHub\madeline_schimenti_a9\madeline_schimenti_a9\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Madeline_2\Documents\GitHub\madeline_schimenti_a9\madeline_schimenti_a9\obj\Debug\madeline_schimenti_a9.dll
 C:\Users\Madeline_2\Documents\GitHub\madeline_schimenti_a9\madeline_schimenti_a9\obj\Debug\madeline_schimenti_a9.pdb
+C:\Users\Madeline_2\Documents\GitHub\madeline_schimenti_a9\madeline_schimenti_a9\obj\Debug\madeline_schimenti_a9.csprojResolveAssemblyReference.cache

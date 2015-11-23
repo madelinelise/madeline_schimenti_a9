@@ -56,6 +56,12 @@
                 <asp:ListItem>20</asp:ListItem>
             </asp:DropDownList>
         </p>
+        <p>
+            <asp:Label ID="idLabel" runat="server"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="timeoutLabel" runat="server"></asp:Label>
+        </p>
     
     </div>
     </form>
