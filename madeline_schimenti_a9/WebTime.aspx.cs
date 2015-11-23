@@ -15,7 +15,8 @@ namespace madeline_schimenti_a9
                 timeLabel.Text = DateTime.Now.ToString("hh:mm:ss");
                 idLabel.Text = "Your unique session ID is: " + Session.SessionID;
                 timeoutLabel.Text = "Timeout: " + Session.Timeout + " minutes.";
-                
+               Session.Add(timeLabel.Text, timeLabel.Text);
+                sessionCountLabel.Text = "You have visted this page " + Session.Count + " times";
             
 
         }

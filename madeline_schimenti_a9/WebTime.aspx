@@ -62,6 +62,9 @@
         <p>
             <asp:Label ID="timeoutLabel" runat="server"></asp:Label>
         </p>
+        <p>
+            <asp:Label ID="sessionCountLabel" runat="server"></asp:Label>
+        </p>
     
     </div>
     </form>
