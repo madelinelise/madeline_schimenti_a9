@@ -17,6 +17,9 @@
     <form id="form1" runat="server">
     <div>
     
+        <h1>
+            <asp:Label ID="nameLabel" runat="server" Text="Madeline Schimenti - A9"></asp:Label>
+        </h1>
         <h1>Current time on the Web server:</h1>
         <p>
             <asp:Label ID="timeLabel" runat="server" CssClass="timeStyle"></asp:Label>
@@ -63,10 +66,12 @@
             <asp:Label ID="timeoutLabel" runat="server"></asp:Label>
         </p>
         <p>
-            <asp:Label ID="sessionCountLabel" runat="server"></asp:Label>
+            <asp:Label ID="sessionCountLabel" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="Black"></asp:Label>
         </p>
     
     </div>
+        <asp:BulletedList ID="BulletedListSession" runat="server">
+        </asp:BulletedList>
     </form>
 </body>
 </html>

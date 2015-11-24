@@ -11,13 +11,29 @@ namespace madeline_schimenti_a9
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             
-                timeLabel.Text = DateTime.Now.ToString("hh:mm:ss");
-                idLabel.Text = "Your unique session ID is: " + Session.SessionID;
-                timeoutLabel.Text = "Timeout: " + Session.Timeout + " minutes.";
-               Session.Add(timeLabel.Text, timeLabel.Text);
-                sessionCountLabel.Text = "You have visted this page " + Session.Count + " times";
-            
+            Session.Timeout = 1440;
+
+            timeLabel.Text = DateTime.Now.ToString("hh:mm:ss");
+
+            idLabel.Text = "Your unique session ID is: " + Session.SessionID;
+
+            timeoutLabel.Text = "Timeout: " + Session.Timeout + " minutes.";
+
+            if (!IsPostBack)
+            {
+                Session.Add(timeLabel.Text, timeLabel.Text);   
+            }
+
+            if (Session.Count > 0)
+            {
+                foreach (string keyName in Session.Keys)
+                    BulletedListSession.Items.Add(
+                    " " + Session[keyName]);
+            }
+
+            sessionCountLabel.Text = "You have visted this page (non post back) " + Session.Count + " time(s) at:";
 
         }
 
